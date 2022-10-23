@@ -1,0 +1,20 @@
+#container{width: 960px;padding:0px;margin: 0 auto}
+img{width: 960px;height: 160px}
+
+
+#menu ul
+{
+    padding: 0; border: 0;
+    list-style: none; line-height: 150%;
+    margin-top: 0; margin-right: 0;
+    margin-bottom: 0; margin-left: 40px;
+}
+#nav li a span
+{
+    float: left;  padding: 11px 40px 10px 10px;
+    line-height: 14px;text-align: center;
+    background-color: aqua;
+    font-size: 14px; font-weight: bold; color: #FFFFFF;
+    text-decoration: none;
+}
+a:hover{color: #ff3d3d}

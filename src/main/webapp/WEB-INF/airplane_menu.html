@@ -1,33 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>民大航空信息显示系统</title>
-      <link href="style_airplane.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>民大航空信息显示系统</title>
+    <link href="style_airplane.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="qiehuan.js"></script>
+    <script type="text/javascript" src="switchpic.js"></script>
 </head>
-<body>
-<div id="container">
-  <div id="header">
-    <img src="/src/main/webapp/img/header_air.jpg" alt="">
-  </div>
-  <div id="menu_out">
-    <div id="menu_in">
-      <div id="menu">
-        <ul id="nav">
-          <li><a class="nav_on"  href="#" id="mynav0"><span>首页</span></a></li>
-          <li><a class="nav_on"  href="#"><span>预定行程</span></a></li>
-          <li><a class="nav_on"  href="#"><span>服务大厅</span></a></li>
-          <li><a class="nav_on"  href="#"><span>民航假期</span></a></li>
-          <li><a class="nav_on"  href="#"><span>计科俱乐部</span></a></li>
-          <li><a class="nav_on"  href="#"><span>优惠信息</span></a></li>
-          <li><a class="nav_on"  href="#"><span>商旅合作</span></a></li>
-          <li><a class="nav_on"  href="#"><span>出行帮助</span></a></li>
-        </ul>
+<body onload="init()">
+<div id="container" class="">
+    <div id="header" class="">
+        <img src="/src/main/webapp/img/header_air.jpg" alt="">
+    </div>
+    <div id="menu_out">
+        <div id="menu_in">
+            <div id="menu">
+                <ul id="nav">
+                    <li><a class="nav_on" href="#" id="mynav0" onmouseover="javascript:qiehuan(0)" target="framebody"><span>首页</span></a></li>
+                    <li class="menu_line"></li>
+                    <li><a class="nav_off" href="#" id="mynav1" onmouseover="javascript:qiehuan(1)"><span>预定行程</span></a></li>
+                    <li class="menu_line"></li>
+                    <li><a class="nav_off" href="#" id="mynav2" onmouseover="javascript:qiehuan(2)"><span>服务大厅</span></a></li>
+                    <li class="menu_line"></li>
+                    <li><a class="nav_off" href="#" id="mynav3" onmouseover="javascript:qiehuan(3)"><span>民航假期</span></a></li>
+                    <li class="menu_line"></li>
+                    <li><a class="nav_off" href="#" id="mynav4" onmouseover="javascript:qiehuan(4)"><span>计科俱乐部</span></a></li>
+                    <li class="menu_line"></li>
+                    <li><a class="nav_off" href="#" id="mynav5" onmouseover="javascript:qiehuan(5)"><span>优惠信息</span></a></li>
+                    <li class="menu_line"></li>
+                    <li><a class="nav_off" href="#" id="mynav6" onmouseover="javascript:qiehuan(6)"><span>商旅合作</span></a></li>
+                    <li class="menu_line"></li>
+                    <li><a class="nav_off" href="#" id="mynav7" onmouseover="javascript:qiehuan(7)"><span>出行帮助</span></a></li>
+                </ul>
 
-      </div>
+                <div id="menu_con">
+                    <div id="qh_con0" style="display: block">
+                        <ul>
+                            <li><a href="#"><span>预定行程</span></a></li>
+                            <li class="menu_line2"></li>
+                            <li><a href="#"><span>行程服务</span></a></li>
+                            <li class="menu_line2"></li>
+                            <li><a href="#"><span>旅游度假</span></a></li>
+                            <li class="menu_line2"></li>
+                            <li><a href="#"><span>移动端</span></a></li>
+                        </ul>
+                    </div>
+                    <div id="qh_con1" style="display: none">
+                        <ul>
+                            <li><a href="#"><span>机票预定</span></a></li>
+                            <li class="menu_line2"></li>
+                            <li><a href="#"><span>机票兑换</span></a></li>
+                            <li class="menu_line2"></li>
+                            <li><a href="#"><span>团队预定</span></a></li>
+                            <li class="menu_line2"></li>
+                            <li><a href="#"><span>旅游预订</span></a></li>
+                            <li class="menu_line2"></li>
+                            <li><a href="#"><span>机票预约</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="qh_con2" style="display: none">
+                    <ul>
+                        <li><a href="#"><span>行程服务</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>出发前</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>在机场</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>售后服务</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>特殊旅客服务</span></a></li>
+                    </ul>
+                </div>
 
-  </div>
+                <div id="qh_con3" style="display: none">
+                    <ul>
+                        <li><a href="#"><span>旅游度假</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>酒店</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>用车</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>签证</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>目的地信息</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>免税品</span></a></li>
+                    </ul>
+                </div>
+                <div id="qh_con4" style="display: none">
+                    <ul>
+                        <li><a href="#"><span>账户管理</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>里程累积</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>里程兑换</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>会员权益</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>促销信息</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>民大商城</span></a></li>
+                    </ul>
+                </div>
+                <div id="qh_con5" style="display: none">
+                    <ul>
+                        <li><a href="#"><span>优惠机票</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>机票促销</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>精彩活动</span></a></li>
+                    </ul>
+                </div>
+                <div id="qh_con6" style="display: none">
+                    <ul>
+                        <li><a href="#"><span>企业商旅计划</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>企业专区</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>家庭专区(企业版)</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>联系我们</span></a></li>
+                    </ul>
+                </div>
+                <div id="qh_con7" style="display: none">
+                    <ul>
+                        <li><a href="#"><span>机票预订</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>办理值机</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>行李服务</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>机上服务</span></a></li>
+                        <li class="menu_line2"></li>
+                        <li><a href="#"><span>常见问题</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="main">
+        <div id="leftbar" class="">
+            <a href="#"><img id="pic"></a>
+        </div>
+        <div id="right" class="">
+            <iframe name="framebody" src=" "></iframe>
+        </div>
+    </div>
 </div>
-</div>
+
 </body>
 </html>
