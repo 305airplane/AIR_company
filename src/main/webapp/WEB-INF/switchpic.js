@@ -7,7 +7,7 @@ function $(id){return document.getElementById(id);}
 function switchPic(){  //切换图像函数，定时触发
     if (CurScreen==MaxScreen){CurScreen=1;    }else{CurScreen++;}
     //切换图像到最大值时返回1
-    $("pic").src="/src/main/webapp/img/example"+CurScreen+".png";//更换图像的文件名
+    $("pic").src="../img/example"+CurScreen+".png";//更换图像的文件名
 }
 function reStart(){//重新开始，鼠标移出时触发
     switchPic();     //切换下一张图
