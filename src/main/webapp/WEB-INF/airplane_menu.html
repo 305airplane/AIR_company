@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>民大航空信息显示系统</title>
-    <link href="style_airplane.css" rel="stylesheet" type="text/css">
+    <link href="style_airplane.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="qiehuan.js"></script>
     <script type="text/javascript" src="switchpic.js"></script>
 </head>
@@ -16,21 +16,29 @@
         <div id="menu_in">
             <div id="menu">
                 <ul id="nav">
-                    <li><a class="nav_on" href="#" id="mynav0" onmouseover="javascript:qiehuan(0)" target="framebody"><span>首页</span></a></li>
+                    <li><a class="nav_on" href="#" id="mynav0" onmouseover="qiehuan(0)"
+                           target="framebody"><span>首页</span></a></li>
                     <li class="menu_line"></li>
-                    <li><a class="nav_off" href="#" id="mynav1" onmouseover="javascript:qiehuan(1)"><span>预定行程</span></a></li>
+                    <li><a class="nav_off" href="#" id="mynav1"
+                           onmouseover="qiehuan(1)"><span>预定行程</span></a></li>
                     <li class="menu_line"></li>
-                    <li><a class="nav_off" href="#" id="mynav2" onmouseover="javascript:qiehuan(2)"><span>服务大厅</span></a></li>
+                    <li><a class="nav_off" href="#" id="mynav2"
+                           onmouseover="qiehuan(2)"><span>服务大厅</span></a></li>
                     <li class="menu_line"></li>
-                    <li><a class="nav_off" href="#" id="mynav3" onmouseover="javascript:qiehuan(3)"><span>民航假期</span></a></li>
+                    <li><a class="nav_off" href="#" id="mynav3"
+                           onmouseover="qiehuan(3)"><span>民航假期</span></a></li>
                     <li class="menu_line"></li>
-                    <li><a class="nav_off" href="#" id="mynav4" onmouseover="javascript:qiehuan(4)"><span>计科俱乐部</span></a></li>
+                    <li><a class="nav_off" href="#" id="mynav4"
+                           onmouseover="qiehuan(4)"><span>计科俱乐部</span></a></li>
                     <li class="menu_line"></li>
-                    <li><a class="nav_off" href="#" id="mynav5" onmouseover="javascript:qiehuan(5)"><span>优惠信息</span></a></li>
+                    <li><a class="nav_off" href="#" id="mynav5"
+                           onmouseover="qiehuan(5)"><span>优惠信息</span></a></li>
                     <li class="menu_line"></li>
-                    <li><a class="nav_off" href="#" id="mynav6" onmouseover="javascript:qiehuan(6)"><span>商旅合作</span></a></li>
+                    <li><a class="nav_off" href="#" id="mynav6"
+                           onmouseover="qiehuan(6)"><span>商旅合作</span></a></li>
                     <li class="menu_line"></li>
-                    <li><a class="nav_off" href="#" id="mynav7" onmouseover="javascript:qiehuan(7)"><span>出行帮助</span></a></li>
+                    <li><a class="nav_off" href="#" id="mynav7"
+                           onmouseover="qiehuan(7)"><span>出行帮助</span></a></li>
                 </ul>
 
                 <div id="menu_con">
@@ -58,7 +66,7 @@
                             <li><a href="#"><span>机票预约</span></a></li>
                         </ul>
                     </div>
-                </div>
+
                 <div id="qh_con2" style="display: none">
                     <ul>
                         <li><a href="#"><span>行程服务</span></a></li>
@@ -72,7 +80,6 @@
                         <li><a href="#"><span>特殊旅客服务</span></a></li>
                     </ul>
                 </div>
-
                 <div id="qh_con3" style="display: none">
                     <ul>
                         <li><a href="#"><span>旅游度假</span></a></li>
@@ -139,14 +146,34 @@
             </div>
         </div>
     </div>
+</div>
+
+  <div id="main">
+    <div id="leftbar" class="">
+        <a href="#"><img id="pic" src="src/main/webapp/img/example1.png" border="0" alt=""
+        onmouseover="pause();" onmouseout="reStart()"></a>
     </div>
-    <div id="main">
-        <div id="leftbar" class="">
-            <a href="#"><img id="pic"></a>
-        </div>
-        <div id="right" class="">
-            <iframe name="framebody" src=" "></iframe>
-        </div>
+    <div id="right" class="">
+        <iframe name="framebody" src=""></iframe>
+    </div>
+  </div>
+<!-- 页面底部设计   -->
+    <div class="bottom">
+        <ul>
+            <li><strong>友情链接：</strong>
+                <select size="1" name="d1" onchange="window.open(this.options[this.selectedindex].value)">
+                    <option>友商</option>
+                    <option value="https://www.csair.com/cn/">中国南方航空</option>
+                    <option value="https://www.ceair.com">中国东方航空</option>
+                    <option value="https://sda.cn/">山东航空</option>
+                    <option value="https://www.ch.com/">春秋航空</option>
+                    <option value="https://www.hnair.com/">海南航空</option>
+                </select>
+            </li>
+            <li>
+                305airplane前端开发小组创建2020-2024©保留所有权利，未经允许不得转载，复制
+            </li>
+        </ul>
     </div>
 </div>
 
