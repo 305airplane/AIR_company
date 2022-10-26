@@ -30,6 +30,7 @@ img{width:960px;height:160px;}
 #menu{
     background:url("../img/menu_bg.gif") repeat-x;
     height:73px;width:960px;
+    background-color: #FF9820;
 }
 .menu_line{
     background:url("../img/menu_line.gif") no-repeat center top;
