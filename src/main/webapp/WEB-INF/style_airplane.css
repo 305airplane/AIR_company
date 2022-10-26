@@ -20,24 +20,23 @@ img{width:960px;height:160px;}
     padding-left:4px;
     margin-left:auto;
     margin-right:auto;
-    background:url("../img/menu_left.gif") no-repeat left top;
+    background:url("img/menu_left.gif") no-repeat left top;
     overflow:hidden; /* 溢出部分隐藏 */
 }
 #menu_in{
-    background:url("../img/menu_right.gif") no-repeat right top;
+    background:url("img/menu_right.gif") no-repeat right top;
     padding-right:4px;
 }
 #menu{
-    background:url("../img/menu_bg.gif") repeat-x;
+    background:url("img/menu_bg.gif") repeat-x;
     height:73px;width:960px;
-    background-color: #FF9820;
 }
 .menu_line{
-    background:url("../img/menu_line.gif") no-repeat center top;
+    background:url("img/menu_line.gif") no-repeat center top;
     width:8px;
 }
 .menu_line2{
-    background:url("../img/menu_line2.gif") no-repeat center top;
+    background:url("img/menu_line2.gif") no-repeat center top;
     width:15px;
 }
 #nav{
@@ -52,7 +51,7 @@ img{width:960px;height:160px;}
     display:block;
     padding-left:6px;
     height:35px;
-    background:url("../img/menu_on_left.gif") no-repeat left top;
+    background:url("img/menu_on_left.gif") no-repeat left top;
     cursor:pointer;
     text-decoration:none;
 }
@@ -60,7 +59,7 @@ img{width:960px;height:160px;}
     float:left;
     padding:11px 14px 10px 10px;
     line-height:14px;
-    background:url("../img/menu_on_right.gif") no-repeat right top;
+    background:url("img/menu_on_right.gif") no-repeat right top;
     font-size:14px;
     font-weight:bold;
     color:#FFFFFF;
@@ -89,7 +88,7 @@ img{width:960px;height:160px;}
 #menu_con li a{
     display:block;
     float:left;
-    background:url("../img/menu_on_left2.gif") no-repeat left top;
+    background:url("img/menu_on_left2.gif") no-repeat left top;
     cursor:pointer;
     padding-left:3px;
 }
@@ -97,14 +96,14 @@ img{width:960px;height:160px;}
     float:left;
     padding:6px 10px 4px 10px;
     line-height:12px;
-    background:url("../img/menu_on_right2.gif") no-repeat right top;
+    background:url("img/menu_on_right2.gif") no-repeat right top;
 }
 #menu_con li a:hover{
     text-decoration:none;
-    background:url("../img/menu_on_left2.gif") no-repeat left bottom;
+    background:url("img/menu_on_left2.gif") no-repeat left bottom;
 }
 #menu_con li a:hover span{
-    background:url("../img/menu_on_right2.gif") no-repeat right bottom;
+    background:url("img/menu_on_right2.gif") no-repeat right bottom;
 }
 #main{width:960px;height:300px;}
 #leftbar{width:298px;height:298px;float:left;

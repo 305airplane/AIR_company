@@ -6,11 +6,12 @@
     <link href="style_airplane.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="qiehuan.js"></script>
     <script type="text/javascript" src="switchpic.js"></script>
+    <script type="text/javascript" src="/js/userdisplay.js"></script>
 </head>
 <body onload="init()">
 <div id="container" class="">
     <div id="header" class="">
-        <img src="../img/header_air.jpg" alt="">
+        <img src="img/header_air.jpg" alt="">
     </div>
     <div id="menu_out">
         <div id="menu_in">
@@ -39,13 +40,6 @@
                     <li class="menu_line"></li>
                     <li><a class="nav_off" href="#" id="mynav7"
                            onmouseover="qiehuan(7)"><span>出行帮助</span></a></li>
-                    <li class="menu_line"></li>
-                    <li><a class="nav_off" href="login.html" id="mynav8"
-                           onmouseover="qiehuan(8)"><span>登录</span></a></li>
-                    <li class="menu_line"></li>
-                    <li><a class="nav_off" href="register.html" id="mynav9"
-                           onmouseover="qiehuan(8)"><span>注册</span></a></li>
-
                 </ul>
 
                 <div id="menu_con">
@@ -161,7 +155,7 @@
         onmouseover="pause();" onmouseout="reStart()"></a>
     </div>
     <div id="right" class="">
-        <iframe name="framebody" src=""></iframe>
+            <input type="button" value="显示用户列表" id="btn">
     </div>
   </div>
 <!-- 页面底部设计   -->
