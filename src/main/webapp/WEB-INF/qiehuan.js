@@ -1,6 +1,6 @@
 function qiehuan(num)
 {
-    for(var id=0;id<=8;id++)
+    for(var id=0;id<=7;id++)
     {
         if(id==num)
         {
