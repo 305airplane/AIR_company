@@ -26,7 +26,7 @@ public class displayusertable extends HttpServlet {
         mydb os=new mydb();
         try {
             Statement ps=os.getstmt();
-            String sql="select 用户名,密码 from airplan.用户表";
+            String sql="select 用户名,密码 from 用户表 ";
             ResultSet rs=ps.executeQuery(sql);
             //处理结果
             json.append("[");
@@ -40,6 +40,7 @@ public class displayusertable extends HttpServlet {
                 json.append("\",\"密码\":\"");
                 json.append(secret);
                 json.append("\"},");
+                System.out.println("搜索到");
             }
             jsonstr=json.substring(0,json.length()-1)+"]";
         } catch (SQLException e) {
@@ -48,5 +49,6 @@ public class displayusertable extends HttpServlet {
         finally {
         }
         out.print(jsonstr);
+
     }
 }

@@ -14,7 +14,7 @@ public class mydb {
     private static final String MYSQL_USERNAME = "Herry";
     private static final String MYSQL_PASSWORD = "000000";
     private static final String MYSQL_DATABASE_SERVER = "localhost:3306";
-    private static final String MYSQL_DATABASE_NAME = "rentalstore?serverTimezone=UTC";
+    private static final String MYSQL_DATABASE_NAME = "airplan?serverTimezone=UTC";
 
     private static Connection con;
 
